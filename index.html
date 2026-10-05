@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         *{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -23,80 +23,62 @@
             width: 30%;
             background-color: white;
         }
-        .basic,.email,.password,.button,h1{
+        .email,.password,.login{
+            height: 22.5%;
             /* border: 1px solid black; */
             width: 90%;
             margin: auto;
         }
-        .email,.password,.button,h1{
-            height: 15%;
-        }
         input{
+            text-align: center;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 10px;
+            height: 40%;
+            width: 100%;
             margin-top: 3%;
         }
-        .basic{
-            height: 30%;
+        h1,.email,.password,.login{
+           /* margin-top: 3%;
+             */
         }
-        .button{
+        h1{
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
+        .login>p{
+            margin-top: 5%;
             text-align: center;
         }
-        button{
-            height: 50%;
-            width: 100%;
+        .password>p{
+            margin-top: 3%;
+            color: gray;
+            font-style: italic;
+        }
+        #Login{
             background: linear-gradient(90deg,skyblue,purple);
             color: white;
-            border: none;
-            border-radius: 10px;
         }
         a{
             text-decoration: none;
             font-style: italic;
         }
-        
-
-        /* button{
-            background-color:linear-gradient(90deg,skyblue,purple) ;
-            border: 1px solid black;
-            width: 90%;
-            margin: auto;
-        } */
-        
     </style>
 </head>
 <body>
     <form action="">
-        <h1 align="center">Sign Up</h1>
-        <div class="basic">
-            <label for="">First Name:</label>
-            <input type="text" name="" id="" required><br>
-            <label for="">Last Name:</label>
-            <input type="text" name="" id=""><br>
-            <label for="">Gender</label>
-            <input type="radio" name="Gender">Male
-            <input type="radio"name="Gender">Female <br>
-            <label for="">Date Of Birth</label>
-            <input type="date" name="" id=""><br>
-            <label for="">Mobile No. :</label> &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="tel" name="" id="">
-        </div>
-        <div class="email">
-            <label for="">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="email" name="" id=""><br>
-            <label for="">Confirm Email :</label>
-            <input type="email" name="" id="">
-        </div>
-        <div class="password">
-            <label for="">Password</label> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="password" name="" id=""><br>
-            <label for="">Confirm password :</label>
-            <input type="password" name="" id="">
-        </div>
-        <div class="button">
-            <input type="checkbox" name="" id="">
-            Terms And Condition <br>
-            <button>SignUp</button>
-            <p>Alredy a Member  ? <a href="Login.html">Login </a></p>
-        </div>
+        <h1 align="center">Login Form</h1>
+        <div class="email"><label for="">Email or Phone</label>
+        <input type="text" placeholder="xyzgmail.com">
+    </div>
+    <div class="password"><label for="">Password</label>
+        <input type="password" placeholder="Abc@1234">
+        <p>Forget Pasword</p>
+    </div>
+    <div class="login">
+        <input type="button" value="Login" id="Login">
+        <p>Not a member ? <a href="singup.html">Sign Up</a></p>
+    </div>
     </form>
 </body>
 </html>
